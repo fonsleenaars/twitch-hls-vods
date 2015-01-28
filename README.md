@@ -21,6 +21,8 @@ As I'm working on the Java example I can outline the calls that should be made i
 **Retrieve an access token for a specific HLS VOD**  
 [https://api.twitch.tv/api/vods/{vodId}/access_token](https://api.twitch.tv/api/vods/{vodId}/access_token)
 
+The {vodId} should be the ID without the prefix letter, so 'v1234567' becomes '1234567'
+
 Result
 ```
 {
