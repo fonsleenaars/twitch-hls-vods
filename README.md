@@ -23,9 +23,9 @@ As I'm working on the Java example I can outline the calls that should be made i
 
 Result
 ```
-{"token":
-    "{\"user_id\":xxxxxxxx,\"vod_id\":xxxxxxx,\"expires\":xxxxxxxxxx,\"chansub\":{\"restricted_bitrates\":[]},\"privileged\":false}",
-    "sig":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+{
+"token": "{\"user_id\":xxxxxxxx,\"vod_id\":xxxxxxx,\"expires\":xxxxxxxxxx,\"chansub\":{\"restricted_bitrates\":[]},\"privi leged\":false}",
+"sig":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
 ```
 The `token` and `sig` values can be put straight into the next API call.
