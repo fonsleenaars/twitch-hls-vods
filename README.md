@@ -25,7 +25,8 @@ Result
 ```
 {"token":
     "{\"user_id\":xxxxxxxx,\"vod_id\":xxxxxxx,\"expires\":xxxxxxxxxx,\"chansub\":{\"restricted_bitrates\":[]},\"privileged\":false}",
-    "sig":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
+    "sig":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}
 ```
 The `token` and `sig` values can be put straight into the next API call.
 
