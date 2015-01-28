@@ -57,3 +57,13 @@ http://vod.ak.hls.ttvnw.net/v1/AUTH_system/vods_xxxx/{channel}_xxxxxxxxxxx_xxxxx
 ```
 
 You can write your own parser for this file and the index-dvr.m3u8 will contain the actual links to the segments!
+
+## FFMPEG
+It's worth noting that the FFMPEG command line program is able to take a M3U8 file as a value for its input (-i) parameter, which will automatically download and concatenate the pieces together if, for example, run like this
+
+`ffmpeg -i "input.m3u8" -bsf:a aac_adtstoasc -c copy output.mp4`
+
+However, the links to the segments in the input.m3u8 file must be absolute paths (not just `index-xxxxxxxxxx-xxxx.ts?start_offset=xxxxxxx&end_offset=xxxxxxx` like you would obtain from the API calls.)
+
+A solution for this is to parse the index.m3u8 yourself, add the prefix, save it to a file and then run FFMPEG on it.
+
