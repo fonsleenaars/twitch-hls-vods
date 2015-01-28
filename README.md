@@ -30,9 +30,9 @@ Result
 The `token` and `sig` values can be put straight into the next API call.
 
 **Retrieve M3U8 file containing the qualities and respective links**  
-[https://usher.twitch.tv/vod/3643712?nauthsig={sig}&nauth={token}](https://usher.twitch.tv/vod/3643712?nauthsig={sig}&nauth={token})
+[https://usher.twitch.tv/vod/{vodId}?nauthsig={sig}&nauth={token}](https://usher.twitch.tv/vod/{vodId}?nauthsig={sig}&nauth={token})
 
-Where the `{sig}` and `{token}` are the exact values you obtained from the previous API call.
+Where the `{vodId}`, `{sig}` and `{token}` are the vod id and the exact values you obtained from the previous API call.
 
 Result
 A file looking something like
